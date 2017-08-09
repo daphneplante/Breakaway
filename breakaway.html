@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="assets/Soccerball.png">
+    </head>
+    
+    <style>
+        video#bgvid { 
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            background: url(polina.jpg) no-repeat;
+            background-size: cover; 
+        }
+        
+        .left {
+            position: absolute;
+            padding: 50px;
+            vertical-align: middle;
+            width: 50%;
+        }
+        
+        .right {
+            position: absolute;
+            width: 50%;
+            margin-left: 50%;
+            padding: 50px;
+        }
+        
+        .audioCenter {
+            margin: 10px auto;
+            width: 320px;
+            
+        }
+        .logo {
+            width: 100%;
+        }
+        
+        .mySlides {
+            display: none;
+            max-height: 800px;
+            max-width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 100px;
+        }
+    </style>
+    
+    <body>        
+        <!-- Video -->
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+            <source src="assets/Low%20Poly%20Colors%2002%20-%20Free%20HD%20Motion%20Background%20Loop.mp4" type="video/mp4">
+        </video>
+        
+        <table>
+            <td class="left">
+                <!-- Logo -->
+                <center><img src="assets/breakaway.png" class="logo"></center>
+                <br>
+                <!-- Audio -->
+                <div class="container-fluid audioCenter">
+                    <audio controls loop autoplay id="myaudio">
+                        <source src="assets/Kelly%20Clarkson%20-%20Breakaway.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- Header -->
+                <br>
+                <h1>Don't let Breakaway break your spirit.</h1>
+            </td>
+            <td class="right">
+                <!-- Photos w3-content w3-section  -->
+                <div class="images" id="images">
+                    <img class="mySlides" src="assets/CrossTeam2-45.jpg">
+                    <img class="mySlides" src="assets/CrossTeam2-47.jpg">
+                    <img class="mySlides" src="assets/20623420_1913434768931081_2111030243_o.jpg">
+                    <img class="mySlides" src="assets/9KVxROV.jpg">
+                    <img class="mySlides" src="assets/breakaway_aesthetic.png">
+                    <img class="mySlides" src="assets/BREAKAWAY_poster.png">
+                    <img class="mySlides" src="assets/Capture.PNG">
+                    <img class="mySlides" src="assets/layout.png">
+                    <img class="mySlides" src="assets/meme.png">
+                    <img class="mySlides" src="assets/mock_teammenu9.png">
+                    <img class="mySlides" src="assets/nightsky.png">
+                    <img class="mySlides" src="assets/pink.png">
+                    <img class="mySlides" src="assets/planking%20bear.jpg">
+                    <img class="mySlides" src="assets/player.png">
+                    <img class="mySlides" src="assets/rainabrokeaway.png">
+                    <img class="mySlides" src="assets/run.png">
+                    <img class="mySlides" src="assets/Screenshot_1.png">
+                    <img class="mySlides" src="assets/Screenshot_2.png">
+                    <img class="mySlides" src="assets/Screenshot_3.png">
+                    <img class="mySlides" src="assets/squad.png">
+                    <img class="mySlides" src="assets/steven.png">
+                    <img class="mySlides" src="assets/talhug.png">
+                    <img class="mySlides" src="assets/theclubhouse.png">
+                    <img class="mySlides" src="assets/woah.png">
+                    <img class="mySlides" src="assets/zl8fCAW.jpg">
+                    <img class="mySlides" src="assets/Broken Twins.PNG">
+                    <img class="mySlides" src="assets/Capture2.PNG">
+                    <img class="mySlides" src="assets/Screenshot_4.png">
+                </div>
+                <!-- 
+                    "assets/CrossTeam2-45.jpg",
+                    "assets/CrossTeam2-47.jpg",
+                    "assets/20623420_1913434768931081_2111030243_o.jpg",
+                    "assets/9KVxROV.jpg",
+                    "assets/breakaway_aesthetic.png",
+                    "assets/BREAKAWAY_poster.png",
+                    "assets/Capture.PNG",
+                    "assets/layout.png",
+                    "assets/meme.png",
+                    "assets/mock_teammenu9.png",
+                    "assets/nightsky.png",
+                    "assets/pink.png",
+                    "assets/planking%20bear.jpg",
+                    "assets/player.png",
+                    "assets/rainabrokeaway.png",
+                    "assets/run.png",
+                    "assets/Screenshot_1.png",
+                    "assets/Screenshot_2.png",
+                    "assets/Screenshot_3.png",
+                    "assets/squad.png",
+                    "assets/steven.png",
+                    "assets/talhug.png",
+                    "assets/theclubhouse.png",
+                    "assets/woah.png",
+                    "assets/zl8fCAW.jpg",
+                    "assets/Broken Twins.PNG",
+                    "assets/Capture2.PNG",
+                    "assets/Screenshot_4.png"
+                -->
+            </td>
+        </table>
+        
+    </body>
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.1; 
+    </script>
+</html>
