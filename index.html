@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <!-- Latest compiled and minified CSS -->
@@ -17,7 +16,6 @@
         
         <link rel="icon" type="image/png" href="assets/Soccerball.png">
     </head>
-    
     <style>
         video#bgvid { 
             position: fixed;
@@ -35,120 +33,52 @@
             background: url(polina.jpg) no-repeat;
             background-size: cover; 
         }
-        
-        .left {
-            position: absolute;
-            padding: 50px;
-            vertical-align: middle;
-            width: 50%;
-        }
-        
-        .right {
-            position: absolute;
-            width: 50%;
-            margin-left: 50%;
-            padding: 50px;
-        }
-        
-        .audioCenter {
-            margin: 10px auto;
-            width: 320px;
-            
-        }
-        .logo {
-            width: 100%;
-        }
-        
-        .mySlides {
-            display: none;
-            max-height: 800px;
-            max-width: 100%;
-        }
-        
-        h1 {
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
             text-align: center;
-            font-family: 'Dancing Script', cursive;
-            font-size: 100px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
         }
     </style>
     
     <body>
+        
         <!-- Video -->
         <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
             <source src="assets/Low%20Poly%20Colors%2002%20-%20Free%20HD%20Motion%20Background%20Loop.mp4" type="video/mp4">
         </video>
         
-        <table>
-            <td class="left">
-                <!-- Logo -->
-                <center><img src="assets/breakaway.png" class="logo"></center>
-                <br>
-                <!-- Audio -->
-                <div class="container-fluid audioCenter">
-                    <audio controls loop autoplay id="myaudio">
-                        <source src="assets/Kelly%20Clarkson%20-%20Breakaway.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <!-- Header -->
-                <br>
-                <h1>Don't let Breakaway break your spirit.</h1>
-            </td>
-            <td class="right">
-                <!-- Photos w3-content w3-section  -->
-                <div class="images" id="images">
-                    <img class="mySlides" src="assets/CrossTeam2-45.jpg">
-                    <img class="mySlides" src="assets/CrossTeam2-47.jpg">
-                    <img class="mySlides" src="assets/20623420_1913434768931081_2111030243_o.jpg">
-                    <img class="mySlides" src="assets/9KVxROV.jpg">
-                    <img class="mySlides" src="assets/breakaway_aesthetic.png">
-                    <img class="mySlides" src="assets/BREAKAWAY_poster.png">
-                    <img class="mySlides" src="assets/Capture.PNG">
-                    <img class="mySlides" src="assets/layout.png">
-                    <img class="mySlides" src="assets/meme.png">
-                    <img class="mySlides" src="assets/mock_teammenu9.png">
-                    <img class="mySlides" src="assets/nightsky.png">
-                    <img class="mySlides" src="assets/pink.png">
-                    <img class="mySlides" src="assets/planking%20bear.jpg">
-                    <img class="mySlides" src="assets/player.png">
-                    <img class="mySlides" src="assets/rainabrokeaway.png">
-                    <img class="mySlides" src="assets/run.png">
-                    <img class="mySlides" src="assets/Screenshot_1.png">
-                    <img class="mySlides" src="assets/Screenshot_2.png">
-                    <img class="mySlides" src="assets/Screenshot_3.png">
-                    <img class="mySlides" src="assets/squad.png">
-                    <img class="mySlides" src="assets/steven.png">
-                    <img class="mySlides" src="assets/talhug.png">
-                    <img class="mySlides" src="assets/theclubhouse.png">
-                    <img class="mySlides" src="assets/woah.png">
-                    <img class="mySlides" src="assets/zl8fCAW.jpg">
-                    <img class="mySlides" src="assets/Broken Twins.PNG">
-                    <img class="mySlides" src="assets/Capture2.PNG">
-                    <img class="mySlides" src="assets/Screenshot_4.png">
-                </div>
-            </td>
-        </table>
         
+        <CENTER>
+            <FORM>
+                <input type="button" class="button" value="Enter Protected Area" onClick="passWord()">
+            </FORM>
+        </CENTER>
     </body>
     
     <script>
-        var myIndex = 0;
-        carousel();
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 3000); // Change image every 3 seconds
+        function passWord() {
+        var testV = 1;
+        var pass1 = prompt('Please Enter Your Password',' ');
+        while (testV < 3) {
+        if (!pass1) 
+        history.go(-1);
+        if (pass1.toLowerCase() == "letmein") {
+        alert('You Got it Right!');
+        window.open('index.html');
+        break;
+        } 
+        testV+=1;
+        var pass1 = 
+        prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
         }
-        
-        var audio = document.getElementById("myaudio");
-        audio.volume = 0.1;
-        
-        
+        if (pass1.toLowerCase()!="password" & testV ==3) 
+        history.go(-1);
+        return " ";
+        }
     </script>
 </html>
